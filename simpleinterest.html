@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple interest calculator</title>
+    
+</head>
+<body bgcolor="black" topmargin="35" leftmargin="0" text="Green">
+    TYPE THE VALUES IN FIRST 3 BOXES AND CLICK SUBMIT!!
+    <script type="text/javascript">
+        function simpleInterest()
+        {
+            a=eval(amount.value)
+            b=eval(rate.value)
+            c=eval(time.value)
+            inrt.value=(a*b*c)/100
+            ait.value=a+eval(inrt.value)
+        }
+    </script>
+<table cellspacing="6" cellpadding="10" border="3" align="center"  >
+<tr >
+    <td>AmOuNt </td>
+    <td><input type="text" id="amount"></td>
+
+</tr>
+<tr>
+    <td>InTeReSt RaTE </td>
+    <td><input type="text" id="rate"> </td> 
+</tr>
+<tr>
+    <td>No Of YeArS </td>
+     <td><input type="text"  id="time"></td>
+</tr>
+<tr >
+    <th >SIMPLE INTERST </th>
+    <td><input type="text"  id="inrt"></td>
+</tr>
+<tr>
+    <th>AMOUNT +INTERST </th>
+    <td><input type="text"  id="ait"></td>
+</tr>
+<tr>
+   
+    <td><input type= "button" value="submit" onclick="simpleInterest()"></td>
+</tr>
+</table>
+</body>
+</html>
